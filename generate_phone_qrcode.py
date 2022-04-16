@@ -14,7 +14,7 @@ qr = qrcode.QRCode(version = 1,
 qr.add_data(data_phone)
  
 qr.make(fit = True)
-img = qr.make_image(fill_color = 'red',
+img = qr.make_image(fill_color = 'black',
                     back_color = 'white')
  
 img.save('MyQRCode.png')
