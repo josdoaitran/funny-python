@@ -1,1 +1,1 @@
-# funny_python
+# Funny Python
