@@ -5,16 +5,18 @@ from libs.generate_chart_lib import GenerateChart
 app = Dash(__name__)
 app.layout = html.Div([
     html.H1('Test Case coverage: '),
-    html.Div([
-        dcc.Graph(id='our_graph')
-    ], className='nine columns'),
     dcc.Dropdown(
         options=[
             {'label': 'feature1', 'value': 'f1'},
             {'label': 'feature2', 'value': 'f2'},
         ],
-        value='MTE'
+        style={'width': "50%"},
+        className='select_box',
+        value='f1'
         , id='demo-dropdown'),
+    html.Div([
+        dcc.Graph(id='our_graph')
+    ], className='nine columns'),
     html.Div(id='dd-output-container')
 ])
 
