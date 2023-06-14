@@ -1,5 +1,11 @@
 # Funny Python
 
+## Setup Virtual Python Environment:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
 ## Draw a heart with Python:
 Using: Turtle
 - Install: `pip3 install turtle`
